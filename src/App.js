@@ -1,7 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-import AudioPlayer from 'react-h5-audio-player'
-import 'react-h5-audio-player/lib/styles.css';
+import Player from './components/Player';
 function App() {
   const nome = "Alice Fortes"
   return (
@@ -10,11 +9,7 @@ function App() {
        <h1>
          <p>Olá, esta é uma música do Eve</p>
        </h1>
-       <div>
-       <AudioPlayer 
-      src={process.env.PUBLIC_URL + '/audios/01.mp3'} 
-      layout="stacked-reverse"/>
-       </div>
+     <Player/>
        
        <p>Feito por {nome}</p>
 
